@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisFavoritosFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVert0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHori0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linearLayoutTituloFavoritos"
+        android:background="@color/azul_barra_inf"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHori0.1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewButtonAtras"
+            android:layout_marginStart="15dp"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/content_description"
+            android:background="@color/transparente"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_back_button" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/textViewSeccion"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:text="@string/mis_favoritos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCantidadResultados"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:textSize="16sp"
+                android:text="@string/resultados"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewFiltroMisFavoritos"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparente"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_filter_alt_24"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewContenedorPublicaciones"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutTituloFavoritos"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutContenedorBotonCargarMas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMisFavoritos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutContenedorBotonCargarMas"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.widget.Button
+            android:id="@+id/bUttonCargarMasResultados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_aceptar_redondo"
+            android:paddingHorizontal="15dp"
+            android:fontFamily="@font/kumbh_sans_bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:text="@string/cargar_mas_resultados"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewSinPublicaciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center"
+        android:text="@string/sin_publicaciones_favoritos"
+        android:textSize="20sp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVert0.1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

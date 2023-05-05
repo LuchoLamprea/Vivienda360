@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewMisPub"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVert0.6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCategoriaOferta"
+            android:text="Apartamento En Arriendo"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewBarrio"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:text="San Luis Altos Del Cabo Rural II"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:fontFamily="@font/kumbh_sans_bold"
+            app:layout_constraintTop_toBottomOf="@id/textViewCategoriaOferta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewLocalidad"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Chapinero"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            app:layout_constraintTop_toBottomOf="@id/textViewBarrio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageViewFotoCasa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/modelo_3d_imagen"
+            android:layout_marginVertical="8dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewLocalidad"
+            app:layout_constraintBottom_toTopOf="@id/textViewSeparadorHabitaciones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineVert0.6"
+            android:contentDescription="@string/content_description" />
+
+        <TextView
+            android:id="@+id/textViewArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:text="12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSeparadorArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:text="|"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewArea"/>
+
+        <TextView
+            android:id="@+id/textViewHabitaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="3"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparadorArea"/>
+
+        <TextView
+            android:id="@+id/textViewSeparadorHabitaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:text="|"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewHabitaciones"/>
+
+        <TextView
+            android:id="@+id/textViewBanos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="2"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewSeparadorHabitaciones"/>
+
+        <TextView
+            android:id="@+id/textViewPrecio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12'000.000"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/kumbh_sans_bold"
+            app:layout_constraintTop_toTopOf="@id/imageViewFotoCasa"
+            app:layout_constraintStart_toEndOf="@id/imageViewFotoCasa"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <android.widget.Button
+            android:id="@+id/buttonEditar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="@string/editar"
+            android:background="@drawable/boton_activo_redondo"
+            app:layout_constraintTop_toBottomOf="@id/textViewPrecio"
+            app:layout_constraintStart_toEndOf="@id/imageViewFotoCasa"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <android.widget.Button
+            android:id="@+id/buttonEliminar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="@string/eliminar"
+            android:background="@drawable/boton_eliminar_redondo"
+            app:layout_constraintTop_toBottomOf="@id/buttonEditar"
+            app:layout_constraintStart_toEndOf="@id/imageViewFotoCasa"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textViewContactar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="@string/contactar"
+            android:visibility="invisible"
+            android:enabled="false"
+            android:textColor="@color/black"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:background="@drawable/boton_aceptar_redondo"
+            app:layout_constraintTop_toBottomOf="@id/textViewPrecio"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewFotoCasa"
+            app:layout_constraintStart_toEndOf="@id/imageViewFotoCasa"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewIdPublicacion"
+            android:text="ID # 1"
+            android:layout_marginTop="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonEliminar"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

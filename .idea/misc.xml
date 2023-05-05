@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/borde_redondeado_20.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_activo_redondo.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_borde_centro.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_borde_derecho.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_borde_izquierdo.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_eliminar_redondo.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_relleno_centro.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_relleno_derecho.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/boton_relleno_izquierdo.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/edittext_redondo_error.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_back_24.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_bathroom.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_filter_alt_24.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_flecha_curva.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_image_not_supported_24.xml" value="0.1715" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_multiple_images.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_star.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/ic_star_activated.xml" value="0.172" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/drawable/imagen_modelo_redondeada.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/activity_pantalla_inicial.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_actualizar_contrasena.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_buscar.xml" value="0.1" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_contactar.xml" value="0.22" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_favoritos.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_filtro.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_fotos.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_fullscreen.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_login.xml" value="0.19519927536231885" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_mi_busqueda.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_mis_favoritos.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_mis_publicaciones.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_modelo.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_perfil.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_prueba_borrar.xml" value="0.19519927536231885" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_publicar_inmueble.xml" value="0.33" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_registrate.xml" value="0.19655797101449277" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_seccion_buscar.xml" value="0.19010416666666666" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_validar_identidad.xml" value="0.19519927536231885" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/fragment_visualizacion.xml" value="0.25" />
+        <entry key="..\:/Lucho/Proyectos_Programacion/PruebasTesis/Vivienda360/app/src/main/res/layout/publicacion.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

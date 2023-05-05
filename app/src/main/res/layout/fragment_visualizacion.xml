@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".VisualizacionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutContenedorVerModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewModelo3d"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/modelo_3d_imagen"
+                    android:scaleType="centerCrop"
+                    android:background="@color/fondo_modelo_3d"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/textViewVerModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ver_modelo_3d"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="30sp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="20"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="15dp"
+                    app:layout_constraintTop_toTopOf="@id/imageViewModelo3d"
+                    app:layout_constraintBottom_toBottomOf="@id/imageViewModelo3d"
+                    app:layout_constraintEnd_toEndOf="@id/imageViewModelo3d"
+                    app:layout_constraintStart_toStartOf="@id/imageViewModelo3d"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayoutContenedorVerFotos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayoutContenedorVerModelo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViewFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo_app_transparente"
+                    android:background="@color/transparente"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/imageViewFotosMultiples"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_multiple_images"
+                    app:tint="@color/texto_hint_default"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toTopOf="@id/imageViewFoto"
+                    app:layout_constraintEnd_toEndOf="@id/imageViewFoto" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textViewTituloPublicacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Casa en Venta en Tintal"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="22sp"
+                android:textColor="@color/texto_hint_default"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorVerFotos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imageViewFavorito"/>
+
+            <ImageView
+                android:id="@+id/imageViewFavorito"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toTopOf="@+id/textViewTituloPublicacion"
+                app:layout_constraintBottom_toBottomOf="@id/textViewTituloPublicacion"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewPrecioPublicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$589'000.000"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/textViewTituloPublicacion"
+                app:layout_constraintStart_toStartOf="@id/textViewTituloPublicacion"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorDatosBasicos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp"
+                app:layout_constraintTop_toBottomOf="@id/textViewPrecioPublicacion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="72 m²"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_rule"
+                        app:tint="@color/texto_hint_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorHabitaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewHabitaciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_bedroom"
+                        app:tint="@color/texto_hint_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorBanos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewBanos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_bathroom"
+                        app:tint="@color/texto_hint_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorGarajes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGarajes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_garage"
+                        app:tint="@color/texto_hint_default" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorDatosSecundarios"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorDatosBasicos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorEstrato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewTituloEstrato"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/estrato"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_medium"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_layers"
+                            app:tint="@color/texto_hint_default" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewEstrato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/roboto_medium"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutContenedorAntiguedad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewTituloAntiguedad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/antiguedad"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_medium"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_calendar"
+                            app:tint="@color/texto_hint_default" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewAntiguedad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 años"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/roboto_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewTituloDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:textSize="25sp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorDatosSecundarios"
+                app:layout_constraintStart_toStartOf="@id/textViewTituloPublicacion"/>
+
+            <TextView
+                android:id="@+id/textViewDescripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                app:layout_constraintTop_toBottomOf="@id/textViewTituloDescripcion"
+                app:layout_constraintStart_toStartOf="@id/textViewTituloPublicacion"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewTituloUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ubicacion"
+                android:textSize="25sp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/textViewDescripcion"
+                app:layout_constraintStart_toStartOf="@id/textViewTituloPublicacion"/>
+
+            <fragment
+                android:id="@+id/mapView"
+                android:layout_marginTop="15dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                tools:context="VisualizacionFragment"
+                tools:ignore="FragmentTagUsage"
+                app:layout_constraintTop_toBottomOf="@id/textViewTituloUbicacion"/>
+
+            <android.widget.Button
+                android:id="@+id/buttonContactar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/boton_aceptar_redondo"
+                android:text="@string/contactar"
+                android:fontFamily="@font/roboto_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="45dp"
+                app:layout_constraintTop_toBottomOf="@id/mapView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageViewButtonAtrasVisualizacion"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/content_description"
+        android:background="@color/transparente"
+        app:tint="@color/fondo_edittext"
+        android:tintMode="multiply"
+        android:src="@drawable/ic_back_button"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

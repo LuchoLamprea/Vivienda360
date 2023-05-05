@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/fondo_autocomplete"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/visor_autocomplete"
+        android:textColor="@color/texto_hint"
+        android:background="@color/fondo_autocomplete"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="5dp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/texto_hint" />
+
+
+</LinearLayout>

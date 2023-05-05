@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Vivienda 360</string>
+    <string name="cargando_contenido">Cargando el contenido</string>
+    <string name="content_description"></string>
+    <string name="title_activity_pantalla_inicial">MainActivity</string>
+    <string name="title_buscar">Buscar</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_fav">Favoritos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="busqueda_sector">¿En qué sector buscas?</string>
+    <string name="venta">Venta</string>
+    <string name="arriendo">Arriendo</string>
+    <string name="quieres_publicar">¿Quieres publicar tu inmueble?</string>
+    <string name="iniciar_sesion">INICIAR SESIÓN</string>
+    <string name="iniciar_sesion_minus">Iniciar Sesión</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="olvidado_contrasena">¿Has olvidado tu contraseña?</string>
+    <string name="registrate">Regístrate</string>
+    <string name="error_usuario_contrasena_incorrectos">Usuario o contraseña incorrectos, intenta nuevamente</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="nombre">Nombre y Apellido</string>
+    <string name="numero_whatsapp">Numero de WhatsApp</string>
+    <string name="numero_contacto">Teléfono de contacto</string>
+    <string name="pregunta_1">Pregunta de seguridad 1</string>
+    <string name="pregunta_2">Pregunta de seguridad 2</string>
+    <string-array name="preguntas_seguridad_1">
+        <item>Selecciona una pregunta</item>
+        <item>Colegio en donde te graduaste de bachiller</item>
+        <item>Ciudad de nacimiento de tu padre</item>
+        <item>Ciudad de nacimiento de tu madre</item>
+        <item>Nombre de tu primera mascota</item>
+        <item>Nombre de tu mejor amigo o amiga de la infancia</item>
+    </string-array>
+    <string-array name="preguntas_seguridad_2">
+        <item>Selecciona una pregunta</item>
+        <item>Club de futbol preferido</item>
+        <item>Videojuego preferido</item>
+        <item>Cantante o agrupación musical preferida</item>
+        <item>Película preferida</item>
+        <item>Comida preferida</item>
+    </string-array>
+    <string name="respuesta">Respuesta</string>
+    <string name="confirmar_contrasena">Confirmar Contraseña</string>
+    <string name="error_longitud_contrasena">Tu contraseña debe tener mínimo 8 caracteres</string>
+    <string name="error_numeros_contrasena">Tu contraseña debe contener por lo menos un número</string>
+    <string name="error_coincidencia_contrasena">Las contraseñas no coinciden</string>
+    <string name="correo_repetido">El correo ingresado ya se encuentra registrado. Cambia tu correo o inicia sesión</string>
+    <string name="registro_exitoso">¡Te has registrado exitosamente!</string>
+    <string name="error_inesperado">Error, por favor intenta nuevamente</string>
+    <string name="olvidaste_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="ingresa_correo">Ingresa tu correo electrónico para acceder a tu cuenta</string>
+    <string name="continuar">Continuar</string>
+    <string name="error_correo_no_registrado">El correo que ingresaste no se encuentra registrado. Regístrate o verifica tu correo.</string>
+    <string name="cambia_contrasena">Valida tu identidad</string>
+    <string name="haremos_preguntas_seguridad">Para validar tu identidad te haremos las preguntas de seguridad.</string>
+    <string name="validar">Validar</string>
+    <string name="error_validar_preguntas">Las respuestas no son correctas, inténtalo nuevamente.</string>
+    <string name="asigna_contrasena_nueva">Asigna tu nueva contraseña</string>
+    <string name="actualizar_contrasena">Actualizar contraseña</string>
+    <string name="error_contrasena_igual">La contraseña es igual a la que ya tienes registrada. Ingresa otra contraseña o inicia sesión.</string>
+    <string name="contrasena_actualizada">La contraseña se ha actualizado correctamente.</string>
+    <string name="bienvenida">Hola, \n</string>
+    <string name="mis_publicaciones">Mis publicaciones</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="cambiar_contrasena">Cambiar contraseña</string>
+    <string name="datos_actualizados">Tus datos fueron actualizados exitosamente</string>
+    <string name="sin_publicaciones">No tienes publicaciones activas. Haz clic aquí para crear una publicación</string>
+    <string name="resultados">resultados</string>
+    <string name="publica_tu_inmueble">Publica tu inmueble</string>
+    <string name="casa">Casa</string>
+    <string name="apartamento">Apartamento</string>
+    <string name="precio">Precio</string>
+    <string name="area_construida">Área Construida</string>
+    <string name="cantidad_habitaciones">Cantidad de habitaciones</string>
+    <string name="cantidad_banos">Cantidad de baños</string>
+    <string name="cantidad_garajes">Cantidad de garajes</string>
+    <string name="estrato">Estrato</string>
+    <string name="antiguedad">Antiguedad</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="agrega_aca_descripcion">Agrega acá la descripción de tu inmueble. Máximo 900 caracteres</string>
+    <string name="direccion">Dirección del inmueble</string>
+    <string name="agrega_fotos">Agrega las fotos de tu publicación. Máximo 15</string>
+    <string name="boton_seleccionar_imagenes">Seleccionar imágenes</string>
+    <string name="boton_limpiar_seleccion">Limpiar selección</string>
+    <string name="agrega_modelo_3d">Agrega el modelo 3D</string>
+    <string name="seleccionar_modelo">Seleccionar modelo</string>
+    <string name="boton_publicar_inmueble">Publicar inmueble</string>
+    <string name="error_direccion_no_encontrada">La dirección ingresada no ha sido encontrada, intenta nuevamente.</string>
+    <string name="error_precio_no_valido">Error. Ingresa un precio valido.</string>
+    <string name="error_area_no_valida">Error. Ingresa un área construida valida.</string>
+    <string name="error_habitaciones_no_valida">Error. Ingresa una cantidad de habitaciones valida.</string>
+    <string name="error_banos_no_valido">Error. Ingresa una cantidad de baños valida.</string>
+    <string name="error_garaje_no_valido">Error. Ingresa una cantidad de garajes valida.</string>
+    <string name="error_estrato_no_valido">Error. Ingresa un estrato valido.</string>
+    <string name="error_antiguedad_no_valida">Error. Ingresa una antiguedad valida.</string>
+    <string name="selecciona_las_fotos">Selecciona las fotos</string>
+    <string name="selecciona_el_modelo">Selecciona el modelo 3D</string>
+    <string name="no_has_seleccionado_fotos">No has seleccionado ninguna foto</string>
+    <string name="no_has_seleccionado_modelo">No has seleccionado ningun modelo 3D</string>
+    <string name="selecciona_glb">Tipo de archivo no válido. Selecciona un archivo .glb</string>
+    <string name="estrato_fuera_de_rango">Estrato no valido. Ingresa un estrato entre 1 y 6</string>
+    <string name="error_mas_15_fotos">No puedes seleccionar más de 15 fotos, inténtalo nuevamente.</string>
+    <string name="error_cargue_fotos">Error en el cargue de las fotos</string>
+    <string name="error_barrio_localidad">Error, la dirección ingresada no corresponde a ninguno de los sectores de la ciudad. Intenta nuevamente</string>
+    <string name="publicacion_exitosa">Has publicado tu inmueble exitosamente</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="area">Área</string>
+    <string name="habitaciones">Habitaciones</string>
+    <string name="banos">Baños</string>
+    <string name="cargar_mas_resultados">Cargar más resultados</string>
+    <string name="id_numero">ID #</string>
+    <string name="articulo_en">en</string>
+    <string name="publicacion_actualizada">La publicación se actualizó exitosamente</string>
+    <string name="filtra_tu_busqueda">Filtra tu búsqueda</string>
+    <string name="desde">Desde</string>
+    <string name="hasta">Hasta</string>
+    <string name="tipo_inmueble">Tipo de inmueble</string>
+    <string name="tipo_oferta">Tipo de oferta</string>
+    <string name="aplicar">Aplicar</string>
+    <string name="error_precios">El precio máximo debe ser superior al precio mínimo.</string>
+    <string name="modelo_agregado">Has agregado el modelo exitosamente</string>
+    <string name="ver_modelo_3d">Ver modelo 3D</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="contactar">Contactar</string>
+    <string name="anos">Años</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="sin_publicaciones_busqueda">Ningun inmueble cumple con tu criterio de busqueda. Haz clic aquí para ser el primero en publicar uno</string>
+    <string name="inmuebles_en">Inmuebles en</string>
+    <string name="inicia_o_registrate_favoritos">Inicia sesión o regístrate para agregar este inmueble a tu lista de favoritos</string>
+    <string name="contacta_propietario">Contacta al propietario</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="llamar">Llamar</string>
+    <string name="sin_numero_contacto">El propietario no tiene número registrado para llamadas</string>
+    <string name="saludo_whatsapp_p1">Hola. Estoy interesad@ en</string>
+    <string name="saludo_whatsapp_p2">. Quisiera tener mayor información.</string>
+    <string name="sin_whatsapp_en_telefono">No tienes instalado WhatsApp en este dispositivo.</string>
+    <string name="asunto_correo">Preguntas sobre</string>
+    <string name="selecciona_correo">Selecciona una app para enviar el correo</string>
+    <string name="inicia_o_registrate_favoritos2">Inicia sesión o regístrate para gestionar tu lista de favoritos</string>
+    <string name="mis_favoritos">Mis favoritos</string>
+    <string name="sin_publicaciones_favoritos">No tienes ningún inmueble marcado como favorito. Para marcar un inmueble como favorito haz clic en el icono de la estrella.</string>
+    <string name="modelo_cargado">Modelo Cargado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

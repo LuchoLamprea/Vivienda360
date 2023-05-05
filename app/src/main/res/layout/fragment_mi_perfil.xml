@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MiPerfilFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert10porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert25porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert35porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert65porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert75porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori7porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori15porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori20porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori70porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori85porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori93porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/textViewDecSup1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/margenHori7porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert35porc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDecSup2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/margenHori15porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert25porc" />
+
+    <TextView
+        android:id="@+id/textViewDecInf1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@+id/margenHori93porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert65porc"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewDecInf2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="@+id/margenHori85porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        />
+
+    <TextView
+        android:id="@+id/textViewPublicaInmueble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center"
+        android:text="@string/bienvenida"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewPublicarInmueble"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/margenHori70porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPublicaInmueble">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="3dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/margenLoginVert25porc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1875" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/margenLoginVert75porc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8125" />
+
+
+            <EditText
+                android:id="@+id/editTextCorreoMiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/correo_electronico"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextNombreMiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/nombre"
+                android:inputType="textPersonName"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCorreoMiPerfil" />
+
+            <EditText
+                android:id="@+id/editTextWhatsappMiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/numero_whatsapp"
+                android:inputType="phone"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombreMiPerfil" />
+
+            <EditText
+                android:id="@+id/editTextTelefonoMiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/numero_contacto"
+                android:inputType="phone"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWhatsappMiPerfil" />
+
+            <Spinner
+                android:id="@+id/spinnerPreguntaSeguridad1MiPerfil"
+                style="@style/SpinnerTheme"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTelefonoMiPerfil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:text="@string/pregunta_1"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/spinnerPreguntaSeguridad1MiPerfil" />
+
+            <EditText
+                android:id="@+id/editTextRespuesta1MiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/respuesta"
+                android:inputType="text"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerPreguntaSeguridad1MiPerfil" />
+
+            <Spinner
+                android:id="@+id/spinnerPreguntaSeguridad2MiPerfil"
+                style="@style/SpinnerTheme"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRespuesta1MiPerfil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/pregunta_2"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/spinnerPreguntaSeguridad2MiPerfil" />
+
+            <EditText
+                android:id="@+id/editTextRespuesta2MiPerfil"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:hint="@string/respuesta"
+                android:inputType="text"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerPreguntaSeguridad2MiPerfil" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <android.widget.Button
+        android:id="@+id/buttonGuardarCambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_activo_redondo"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:text="@string/guardar_cambios"
+        android:layout_marginRight="15dp"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/margenVert25porc"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCambiarContrasena"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewPublicarInmueble" />
+
+    <android.widget.Button
+        android:id="@+id/buttonCambiarContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/boton_activo_redondo"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:text="@string/cambiar_contrasena"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGuardarCambios"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewPublicarInmueble" />
+
+    <android.widget.Button
+        android:id="@+id/buttonPublicar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_aceptar_redondo"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:text="@string/mis_publicaciones"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert25porc"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGuardarCambios" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_app_transparente"
+        android:tint="@color/black"
+        android:alpha="0.5"
+        android:paddingVertical="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintTop_toTopOf="@+id/margenHori90porc" />
+
+    <TextView
+        android:id="@+id/textViewErrorPublicar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center"
+        android:textColor="@color/error"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPublicaInmueble"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

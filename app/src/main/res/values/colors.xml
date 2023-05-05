@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azul_barra_inf">#0B6CFF</color>
+    <color name="fondo_edittext">#F3F3F3</color>
+    <color name="textos">#60605F</color>
+    <color name="boton_inactivo">#C0C0C0</color>
+    <color name="aceptar">#FFB800</color>
+    <color name="texto_link">#0B6CFF</color>
+    <color name="texto_hint">#60605F</color>
+    <color name="texto_hint_default">#969696</color>
+    <color name="transparente">#00FFFFFF</color>
+    <color name="fondo_autocomplete">#65FFFFFF</color>
+    <color name="zona">#8BC34A</color>
+    <color name="verde_app">#8BC34A</color>
+    <color name="error">#E03026</color>
+    <color name="fondo_modelo_3d">#D0D9D6</color>
+    <color name="negro_transparente">#80000000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

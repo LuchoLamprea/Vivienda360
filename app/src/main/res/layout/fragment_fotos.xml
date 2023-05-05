@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/contenedorGeneralVisualizacion"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FotosFragment">
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcherVisualizadorFotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparente"/>
+
+    <TextView
+        android:id="@+id/textViewContadorFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto_hint"
+        android:textSize="22sp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="@id/imageSwitcherVisualizadorFotos"
+        app:layout_constraintEnd_toEndOf="@id/imageSwitcherVisualizadorFotos"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_camera"
+        app:tint="@color/texto_hint"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/textViewContadorFotos"
+        app:layout_constraintBottom_toBottomOf="@id/textViewContadorFotos"
+        app:layout_constraintEnd_toStartOf="@id/textViewContadorFotos" />
+
+    <ImageView
+        android:id="@+id/imageViewFotoAnterior"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_back_24"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewFotoSiguiente"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_next_24"
+        app:tint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarVisualizacion"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/azul_barra_inf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

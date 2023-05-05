@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidarIdentidadFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert10porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert25porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert35porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert65porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert75porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori7porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori15porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori20porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori70porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori85porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori93porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/textViewDecSup1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/margenHori7porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert35porc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDecSup2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/margenHori15porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert25porc" />
+
+    <TextView
+        android:id="@+id/textViewDecInf1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@+id/margenHori93porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert65porc"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewDecInf2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="@+id/margenHori85porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        />
+
+    <TextView
+        android:id="@+id/textViewAsignaNuevaContrasena"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center_horizontal"
+        android:text="@string/cambia_contrasena"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toTopOf="@+id/margenHori20porc" />
+
+    <TextView
+        android:id="@+id/textViewHaremosPreguntas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center_horizontal"
+        android:text="@string/haremos_preguntas_seguridad"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAsignaNuevaContrasena" />
+
+    <TextView
+        android:id="@+id/textViewPregunta1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="left"
+        android:text="@string/pregunta_1"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHaremosPreguntas" />
+
+    <EditText
+        android:id="@+id/editTextCorreoMiPerfil"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:background="@drawable/edittext_redondo"
+        android:layout_height="42dp"
+        android:hint="@string/respuesta"
+        android:inputType="text"
+        android:textColor="@color/textos"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPregunta1" />
+
+    <TextView
+        android:id="@+id/textViewPregunta2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="left"
+        android:text="@string/pregunta_2"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreoMiPerfil" />
+
+    <EditText
+        android:id="@+id/editTextConfirmarContrasenaNueva"
+        android:layout_width="0dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:background="@drawable/edittext_redondo"
+        android:layout_height="42dp"
+        android:hint="@string/respuesta"
+        android:inputType="text"
+        android:textColor="@color/textos"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPregunta2" />
+
+    <android.widget.Button
+        android:id="@+id/buttonPublicar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton_aceptar_redondo"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="@string/validar"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert25porc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConfirmarContrasenaNueva" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_app_transparente"
+        android:tint="@color/white"
+        android:alpha="0.5"
+        android:paddingVertical="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintTop_toTopOf="@+id/margenHori90porc" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButtonAtrasActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:clickable="true"
+        app:backgroundTint="@color/fondo_edittext"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_back_24"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toTopOf="@+id/margenHori7porc" />
+
+    <TextView
+        android:id="@+id/textViewErrorActualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:textColor="@color/error"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAsignaNuevaContrasena"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

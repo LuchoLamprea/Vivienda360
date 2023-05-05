@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublicarInmuebleFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert10porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert25porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert35porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert65porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert75porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenVert90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori7porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori15porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori20porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori70porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori85porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori90porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori93porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/margenHori95porc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/textViewDecSup1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/margenHori7porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert35porc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDecSup2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/margenHori15porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert25porc" />
+
+    <TextView
+        android:id="@+id/textViewDecInf1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circulo_azul"
+        android:alpha="0.95"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@+id/margenHori93porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert65porc"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textViewDecInf2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/circulo_azul"
+        android:text=""
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="@+id/margenHori85porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewButtonAtrasPublicarInmueble"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/content_description"
+        android:background="@color/transparente"
+        app:tint="@color/fondo_edittext"
+        android:tintMode="multiply"
+        android:src="@drawable/ic_back_button"
+        app:layout_constraintTop_toTopOf="@id/margenHori7porc"
+        app:layout_constraintStart_toStartOf="@id/margenVert10porc" />
+
+    <TextView
+        android:id="@+id/textViewPublicaInmueble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center"
+        android:text="@string/publica_tu_inmueble"
+        android:textColor="@color/texto_hint_default"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewPublicarInmueble"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPublicaInmueble"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutContenedorBotonesPublicarEditar"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/margenLoginVert25porc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1875" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/margenLoginVert75porc_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8125" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorTipoOferta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/borde_redondeado_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.widget.Button
+                    android:id="@+id/buttonVenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_activo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/venta"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <android.widget.Button
+                    android:id="@+id/buttonArriendo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_inactivo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/arriendo"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorTipoInmueble"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde_redondeado_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorTipoOferta">
+
+                <android.widget.Button
+                    android:id="@+id/buttonCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_activo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/casa"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <android.widget.Button
+                    android:id="@+id/buttonApartamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_inactivo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/apartamento"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextPrecio"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorTipoInmueble"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/precio"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextPrecio" />
+
+            <EditText
+                android:id="@+id/editTextAreaConstruida"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="numberDecimal"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextPrecio"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/area_construida"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextAreaConstruida" />
+
+            <EditText
+                android:id="@+id/editTextCantidadHabitaciones"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextAreaConstruida"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/cantidad_habitaciones"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextCantidadHabitaciones" />
+
+            <EditText
+                android:id="@+id/editTextCantidadBanos"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCantidadHabitaciones"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/cantidad_banos"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextCantidadBanos" />
+
+            <EditText
+                android:id="@+id/editTextCantidadGarajes"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCantidadBanos"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/cantidad_garajes"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextCantidadGarajes" />
+
+            <EditText
+                android:id="@+id/editTextEstrato"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextCantidadGarajes"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/estrato"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextEstrato" />
+
+            <EditText
+                android:id="@+id/editTextAntiguedad"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="number"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextEstrato"
+                android:autofillHints="notApplicable"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/antiguedad"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextAntiguedad" />
+
+            <EditText
+                android:id="@+id/editTextDescripcion"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:paddingTop="12dp"
+                android:maxLength="900"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:hint="@string/agrega_aca_descripcion"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/textos"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextAntiguedad"
+                android:autofillHints="notApplicable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/descripcion"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextDescripcion" />
+
+            <EditText
+                android:id="@+id/editTextDireccion"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_redondo"
+                android:ems="10"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:inputType="text"
+                android:textColor="@color/textos"
+                android:paddingEnd="35dp"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextDescripcion"
+                android:autofillHints=""
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/imageViewIconoBuscarDireccion"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:foregroundGravity="center"
+                android:layout_height="42dp"
+                app:layout_constraintEnd_toEndOf="@id/editTextDireccion"
+                app:layout_constraintTop_toTopOf="@id/editTextDireccion"
+                android:src="@drawable/ic_search_24"
+                app:tint="@color/texto_hint_default"
+                android:contentDescription="@string/content_description" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:background="@color/white"
+                android:text="@string/direccion"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/editTextDireccion" />
+
+            <fragment
+                android:id="@+id/mapView"
+                android:layout_marginTop="15dp"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toBottomOf="@id/editTextDireccion"
+                tools:context="PublicarInmuebleFragment"
+                tools:ignore="FragmentTagUsage" />
+
+            <TextView
+                android:id="@+id/textViewAgregaFotos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:gravity="center"
+                android:text="@string/agrega_fotos"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mapView" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorBotonesFotos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde_redondeado_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewAgregaFotos">
+
+                <android.widget.Button
+                    android:id="@+id/buttonSeleccionarFotos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_activo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/boton_seleccionar_imagenes"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <android.widget.Button
+                    android:id="@+id/buttonLimpiarFotos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_inactivo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/boton_limpiar_seleccion"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/constraintLayoutContenedorFotos"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_height="250dp"
+                android:background="@drawable/borde_sin_relleno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorBotonesFotos">
+
+                <ImageView
+                    android:id="@+id/imageViewSinFotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:tint="@color/texto_hint_default"
+                    android:src="@drawable/ic_image_not_supported_24"
+                    android:contentDescription="@string/content_description" />
+
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcherFotos"
+                    android:layout_width="0dp"
+                    android:foregroundGravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="0dp"/>
+
+                <ImageView
+                    android:id="@+id/imageViewFotoAnterior"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_back_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageViewFotoSiguiente"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_next_24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textViewAgregaModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/kumbh_sans_semibold"
+                android:gravity="center"
+                android:text="@string/agrega_modelo_3d"
+                android:textColor="@color/texto_hint_default"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayoutContenedorFotos" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutContenedorBotonesModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borde_redondeado_20"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewAgregaModelo">
+
+                <android.widget.Button
+                    android:id="@+id/buttonSeleccionarModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="30dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_activo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/seleccionar_modelo"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <android.widget.Button
+                    android:id="@+id/buttonLimpiarModelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_inactivo_redondo"
+                    android:fontFamily="@font/kumbh_sans_semibold"
+                    android:padding="0dp"
+                    android:text="@string/boton_limpiar_seleccion"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:id="@+id/constraintLayoutContenedorModelo"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_height="250dp"
+                android:background="@drawable/borde_sin_relleno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayoutContenedorBotonesModelo">
+
+                <ImageView
+                    android:id="@+id/imageViewSinModelo"
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_image_not_supported_24"
+                    app:tint="@color/texto_hint_default"
+                    android:contentDescription="@string/content_description" />
+
+                <ImageSwitcher
+                    android:id="@+id/imageSwitcherModelo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayoutContenedorBotonesPublicarEditar"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/margenVert25porc"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintBottom_toBottomOf="@+id/margenHori95porc">
+
+        <android.widget.Button
+            android:id="@+id/buttonGuardarCambiosPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/boton_aceptar_redondo"
+            android:textAllCaps="false"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:text="@string/guardar_cambios"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <android.widget.Button
+            android:id="@+id/buttonPublicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_aceptar_redondo"
+            android:fontFamily="@font/kumbh_sans_semibold"
+            android:text="@string/boton_publicar_inmueble"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewLogoLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_app_transparente"
+        android:alpha="0.5"
+        android:paddingVertical="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/margenVert75porc"
+        app:layout_constraintTop_toTopOf="@+id/margenHori90porc"
+        app:tint="@color/black"
+        android:contentDescription="@string/content_description" />
+
+    <TextView
+        android:id="@+id/textViewErrorPublicar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kumbh_sans_semibold"
+        android:gravity="center"
+        android:textColor="@color/error"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPublicaInmueble"
+        app:layout_constraintEnd_toStartOf="@+id/margenVert90porc"
+        app:layout_constraintStart_toStartOf="@+id/margenVert10porc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
